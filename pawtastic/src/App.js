@@ -13,7 +13,8 @@ export default class App extends Component {
   }
 
   handleChange(event) {
-    this.setState({[event.target.name]: event.target.value})
+    this.setState({[event.target.name]: event.target.value,[event.target.birthday]: event.target.value})
+
   }
 
   handleSubmit(event) {
@@ -21,7 +22,7 @@ export default class App extends Component {
     
     alert(`A name was submitted: ${this.state.petname}`);
     alert(`A name was submitted: ${this.state.breed}`);
-    alert(`A birthday was submitted: ${this.state.bday}`);
+    alert(`A birthday was submitted: ${this.state.birthday}`);
     
 
   } 
