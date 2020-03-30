@@ -5,7 +5,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {petname: ",breed: ",}
+    this.state = {petname: ",breed: ",birthday: '',}
    
 
     this.handleChange = this.handleChange.bind(this)
@@ -21,6 +21,8 @@ export default class App extends Component {
     
     alert(`A name was submitted: ${this.state.petname}`);
     alert(`A name was submitted: ${this.state.breed}`);
+    alert(`A birthday was submitted: ${this.state.bday}`);
+    
 
   } 
 
@@ -31,13 +33,18 @@ export default class App extends Component {
         <label>  
           Name: 
         <input name="petname"  value={this.state.name} onChange={this.handleChange}/>
-         </label>
+         </label> 
         <label>  
           breed: 
       <input name="breed"  value={this.state.breed} onChange={this.handleChange}/>
           </label>
+          <label>  
+          Birthday: 
+      <input birthday='bday'  value={this.state.breed} onChange={this.handleChange}/>
+          </label>
         <input type="submit"  value="Submit" onClick={this.handleSubmit}/>
       </form>
+
     )
   }
 }
