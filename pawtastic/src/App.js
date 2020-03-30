@@ -40,7 +40,7 @@ export default class App extends Component {
           </label>
           <label>  
           Birthday: 
-      <input birthday='bday'  value={this.state.breed} onChange={this.handleChange}/>
+      <input birthday='bday'  value={this.state.birthday} onChange={this.handleChange}/>
           </label>
         <input type="submit"  value="Submit" onClick={this.handleSubmit}/>
       </form>
