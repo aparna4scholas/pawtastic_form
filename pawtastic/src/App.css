@@ -1,9 +1,10 @@
-.App {
-  width: 500px;
-  height: 500px;
-  margin: 50px;
-  padding: 30px;
-  border: 60px solid grey;
-  background-color: lightsteelblue;
+body {
+
+  margin: 40px;
+  background-color: grey;
 }
 
+form {
+
+  font-size: 20pt;
+}
